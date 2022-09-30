@@ -114,9 +114,16 @@ function barchart(data) {
 
 	yAxis(g.append('g'));
 
+
+	g.selectAll('.bar')
+		.data(data)
+		.enter()
+		.append('rect')
+		.attr('class', 'bar')
+		.on("click", function (event, d) {// event is passed first from D3
+			// Do something after clicking a bar
+			d3.select(".image")
+		});
+
 }
-
-
-
-
 
