@@ -115,3 +115,8 @@ function barchart(data) {
 	yAxis(g.append('g'));
 
 }
+
+
+
+
+
